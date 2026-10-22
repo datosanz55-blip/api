@@ -2,9 +2,14 @@
   const header = document.getElementById('header');
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
+  const links = [...nav.querySelectorAll('.nav__link')];
 
   // Шапка: фон при прокрутке
-  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+  const onScroll = () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 40);
+    // На первом экране ни один пункт меню не активен
+    if (window.scrollY < window.innerHeight * 0.5) links.forEach((l) => l.classList.remove('is-active'));
+  };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -21,7 +26,6 @@
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
 
   // Подсветка активного пункта меню
-  const links = [...nav.querySelectorAll('.nav__link')];
   const sections = links.map((l) => document.querySelector(l.getAttribute('href'))).filter(Boolean);
   const navObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
