@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Центр медицины «АПИ» — клиническая апитерапия в Челябинске</title>
+  <meta name="description" content="Международный центр медицины «АПИ» — клиника профессора И.В. Кривопалова-Москвина. Клиническая апитерапия, неврология, наркология, реабилитация после инсульта. Челябинск, с 1991 года.">
+  <meta name="theme-color" content="#0b0b0a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Пчела: используется в декоративных элементах -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bee" viewBox="0 0 120 100">
+      <ellipse cx="44" cy="26" rx="26" ry="15" fill="rgba(255,255,255,.55)" stroke="rgba(255,255,255,.8)" stroke-width="1.5" transform="rotate(-25 44 26)"/>
+      <ellipse cx="68" cy="22" rx="22" ry="12" fill="rgba(255,255,255,.4)" stroke="rgba(255,255,255,.7)" stroke-width="1.5" transform="rotate(20 68 22)"/>
+      <ellipse cx="58" cy="60" rx="38" ry="24" fill="#ffc21a"/>
+      <path d="M38 40c-5 12-5 28 0 40M56 36c-4 15-4 33 0 48M74 38c-4 14-4 30 0 44" stroke="#111" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="96" cy="58" r="14" fill="#1a1a1a"/>
+      <circle cx="100" cy="54" r="3.5" fill="#fff"/>
+      <path d="M102 44c4-8 10-12 16-12M98 44c0-9 4-15 9-18" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M20 60l-12 4 12 3z" fill="#1a1a1a"/>
+    </symbol>
+    <symbol id="hex" viewBox="0 0 100 100">
+      <path d="M50 3l40.7 23.5v47L50 97 9.3 73.5v-47z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="logo" href="#top" aria-label="Центр медицины АПИ — на главную">
+      <span class="logo__mark">
+        <svg viewBox="0 0 100 100"><use href="#hex"/></svg>
+        <svg class="logo__bee" viewBox="0 0 120 100"><use href="#bee"/></svg>
+      </span>
+      <span class="logo__text"><b>АПИ</b><small>центр медицины</small></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#about" class="nav__link">О методе</a>
+      <a href="#directions" class="nav__link">Направления</a>
+      <a href="#founder" class="nav__link">Профессор</a>
+      <a href="#prices" class="nav__link">Цены</a>
+      <a href="#reviews" class="nav__link">Отзывы</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+      <a href="tel:+73512638323" class="nav__phone-mobile">+7 (351) 263-83-23</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+73512638323">
+        <span>+7 (351) 263-83-23</span>
+        <small>запись 7:00–15:00 МСК</small>
+      </a>
+      <a class="btn btn--honey btn--sm" href="#contacts">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__card">
+      <img class="hero__img" src="assets/img/hero-bee.jpg" alt="Пчела собирает нектар на жёлтом цветке" fetchpriority="high">
+      <div class="hero__shade"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light">Челябинск · с 1991 года</p>
+        <h1 class="hero__title">
+          Лечение пчёлами<br>
+          <span class="accent">на научной основе</span>
+        </h1>
+        <p class="hero__lead">
+          Международный центр медицины «АПИ» — клиника профессора И.В.&nbsp;Кривопалова-Москвина
+          и самое крупное апитерапевтическое подразделение страны.
+        </p>
+        <div class="hero__buttons">
+          <a class="btn btn--honey" href="#contacts">Записаться на приём</a>
+          <a class="btn btn--glass" href="#directions">Что мы лечим</a>
+        </div>
+      </div>
+
+      <ul class="hero__chips" aria-label="Коротко о клинике">
+        <li class="chip-card" style="--d:.1s">
+          <b>Стационар</b>
+          <span>курсы 5–20 дней с питанием и проживанием</span>
+        </li>
+        <li class="chip-card" style="--d:.25s">
+          <b>Клиническая апитерапия</b>
+          <span>авторское направление профессора</span>
+        </li>
+        <li class="chip-card" style="--d:.4s">
+          <b>Срочная помощь 24/7</b>
+          <span>+7 (351) 248-81-82</span>
+        </li>
+      </ul>
+
+      <div class="hero__badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="hero__badge-ring">
+          <defs><path id="circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1 -156 0"/></defs>
+          <text><textPath href="#circle">апитерапия · медицина будущего · апитерапия · медицина будущего · </textPath></text>
+        </svg>
+        <svg class="hero__badge-bee" viewBox="0 0 120 100"><use href="#bee"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Апитерапия</span><i>⬢</i><span>Медицина будущего</span><i>⬢</i><span>Неврология</span><i>⬢</i><span>Наркология</span><i>⬢</i><span>Реабилитация</span><i>⬢</i>
+      <span>Апитерапия</span><i>⬢</i><span>Медицина будущего</span><i>⬢</i><span>Неврология</span><i>⬢</i><span>Наркология</span><i>⬢</i><span>Реабилитация</span><i>⬢</i>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">[ наш подход ]</p>
+        <h2 class="h2">Апитерапия — не дополнение,<br>а <span class="accent">главный метод лечения</span></h2>
+        <p class="section-head__lead">
+          Профессор Кривопалов-Москвин создал новое направление в медицине — клиническую апитерапию.
+          Она позволяет применять лечение пчёлами как основной метод, в том числе при многих серьёзных заболеваниях.
+        </p>
+      </div>
+
+      <div class="duo">
+        <article class="photo-card reveal">
+          <img src="assets/img/beekeeper.jpg" alt="Пасечник осматривает ульи на пасеке" loading="lazy">
+          <div class="photo-card__tags">
+            <span>с 1991 года</span><span>научный отдел</span><span>свой стационар</span>
+          </div>
+          <div class="photo-card__body">
+            <h3>Узнайте, что делает <span class="accent">клиническую апитерапию</span> особенной</h3>
+            <p>Старый принцип «есть диагноз — есть схема» остаётся в прошлом. Схема и доза подбираются индивидуально: с учётом заболевания, возраста, чувствительности и аллергизации.</p>
+            <a class="btn btn--honey btn--sm" href="#method">О методе</a>
+          </div>
+        </article>
+
+        <article class="photo-card photo-card--dark reveal" style="--delay:.15s">
+          <img src="assets/img/honey-jar-dark.jpg" alt="Банка мёда на тёмном фоне" loading="lazy">
+          <div class="photo-card__tags">
+            <span>мелиттин</span><span>апамин</span><span>адолапин</span>
+          </div>
+          <div class="photo-card__body">
+            <p class="big-num">Пчелиный яд</p>
+            <p>Сложный природный медикамент, подобного которому пока не смог создать человек. Запускает целую систему неспецифической защиты организма.</p>
+            <p class="photo-card__foot">аминокислоты · пептиды · ферменты</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="section section--numbers" id="numbers">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <h2 class="h2">Опыт, подтверждённый<br><span class="accent">цифрами и фактами</span></h2>
+      </div>
+
+      <div class="numbers">
+        <div class="numbers__col">
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="30">0</span>+</span>
+            <span class="stat__label">лет работы. Центр основан в&nbsp;1991&nbsp;году в Челябинске</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="11">0</span></span>
+            <span class="stat__label">европейских стран в Совете апитерапии «Апиславия», который профессор возглавлял с 2000&nbsp;года</span>
+          </div>
+        </div>
+
+        <div class="comb reveal" aria-hidden="true">
+          <svg viewBox="0 0 360 360" class="comb__svg">
+            <defs>
+              <radialGradient id="cell" cx="50%" cy="40%" r="65%">
+                <stop offset="0" stop-color="#ffe27a"/>
+                <stop offset=".45" stop-color="#ffb800"/>
+                <stop offset="1" stop-color="#b85d00"/>
+              </radialGradient>
+              <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+                <stop offset=".5" stop-color="#fff" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="comb__cells">
+              <g transform="translate(130 20)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+              <g transform="translate(43 70)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+              <g transform="translate(217 70)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+              <g transform="translate(130 120)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+              <g transform="translate(43 170)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+              <g transform="translate(217 170)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+              <g transform="translate(130 220)"><use href="#hex" width="100" height="100" fill="url(#cell)" stroke="#f6e7b0" stroke-width="5"/></g>
+            </g>
+            <g opacity=".7">
+              <ellipse cx="180" cy="45" rx="28" ry="10" fill="url(#gloss)"/>
+              <ellipse cx="93" cy="95" rx="28" ry="10" fill="url(#gloss)"/>
+              <ellipse cx="267" cy="95" rx="28" ry="10" fill="url(#gloss)"/>
+              <ellipse cx="180" cy="145" rx="28" ry="10" fill="url(#gloss)"/>
+              <ellipse cx="93" cy="195" rx="28" ry="10" fill="url(#gloss)"/>
+              <ellipse cx="267" cy="195" rx="28" ry="10" fill="url(#gloss)"/>
+              <ellipse cx="180" cy="245" rx="28" ry="10" fill="url(#gloss)"/>
+            </g>
+          </svg>
+          <svg class="comb__bee comb__bee--1" viewBox="0 0 120 100"><use href="#bee"/></svg>
+          <svg class="comb__bee comb__bee--2" viewBox="0 0 120 100"><use href="#bee"/></svg>
+          <svg class="comb__bee comb__bee--3" viewBox="0 0 120 100"><use href="#bee"/></svg>
+        </div>
+
+        <div class="numbers__col">
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="10">0</span></span>
+            <span class="stat__label">подразделений: от поликлиники и стационара до научного отдела</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value">5–20</span>
+            <span class="stat__label">дней — длительность лечебного курса, в зависимости от диагноза и течения</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact reveal"><b>2001</b><span>Профессор — первый российский представитель в комиссии по апитерапии Всемирной организации «Апимондия»</span></div>
+        <div class="fact reveal"><b>Золотая медаль</b><span>европейского сообщества — у программы «АПИТОКС» при наркомании</span></div>
+        <div class="fact reveal"><b>Впервые</b><span>сотрудники центра исследовали влияние пчелиного яда на систему крови и иммунитет при рассеянном склерозе</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD / BUZZING-style light block -->
+  <section class="buzz" id="method">
+    <div class="buzz__inner">
+      <p class="buzz__word" aria-hidden="true">ЖАЛО<br>ЛЕЧИТ</p>
+      <img class="buzz__img" src="assets/img/dipper-light.jpg" alt="Мёд стекает с деревянной ложки" loading="lazy">
+      <div class="buzz__text reveal">
+        <p class="eyebrow eyebrow--dark">[ как это работает ]</p>
+        <h2 class="h2 h2--dark">Пчела — одноразовый шприц, созданный природой</h2>
+        <p>Без опасности заражения и с высокой эффективностью. При отсутствии противопоказаний пчелоужаление — наиболее эффективный способ применения пчелиного яда, потому что срабатывают сразу четыре фактора:</p>
+        <ol class="factors">
+          <li><span>01</span>Состав пчелиного яда</li>
+          <li><span>02</span>Рефлекторное воздействие</li>
+          <li><span>03</span>Стресс-синдром</li>
+          <li><span>04</span>Биоэнергетический фактор</li>
+        </ol>
+        <blockquote class="buzz__quote">«Пчелиный яд должен давать результат, но не должен быть токсичным. Мы не должны забывать, что это ЯД!»</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTIONS -->
+  <section class="section" id="directions">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">[ направления ]</p>
+        <h2 class="h2">Чистая сила природы<br><span class="accent">в каждом направлении</span></h2>
+      </div>
+
+      <div class="dirs">
+        <a class="dir dir--wide reveal" href="https://api-centre.ru/apiterapiya-lechenie-pchelami/" target="_blank" rel="noopener">
+          <span class="dir__hex">01</span>
+          <h3>Клиническая апитерапия</h3>
+          <p>Лечение пчелиным ядом и продуктами пчеловодства по индивидуальной схеме. Единственный специализированный стационар, использующий весь апитерапевтический арсенал.</p>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/nevrologiya/" target="_blank" rel="noopener">
+          <span class="dir__hex">02</span>
+          <h3>Неврология</h3>
+          <ul><li>Рассеянный склероз</li><li>Болезнь Паркинсона</li><li>Детский церебральный паралич</li></ul>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/insult-mozga-posle-priznaki-lechenie-simptomy-reabilitaciya-vosstanovlenie.html" target="_blank" rel="noopener">
+          <span class="dir__hex">03</span>
+          <h3>Инсульт</h3>
+          <p>Реабилитация и восстановление. Авторский метод восстановления двигательной активности: кинезитерапия в сочетании с апитоксинами.</p>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/narkologiya/" target="_blank" rel="noopener">
+          <span class="dir__hex">04</span>
+          <h3>Наркология</h3>
+          <ul><li>Лечение алкоголизма</li><li>Табакокурение</li><li>Вывод из запоя</li><li>Противоалкогольный напиток «АПИ»</li></ul>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/problemy-pozvonochnika/osteohondroz-lechenie-simptomy-prichiny-stadii.html" target="_blank" rel="noopener">
+          <span class="dir__hex">05</span>
+          <h3>Позвоночник и суставы</h3>
+          <ul><li>Остеохондроз</li><li>Артроз</li><li>Ревматоидный полиартрит</li></ul>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/dermatologiya/" target="_blank" rel="noopener">
+          <span class="dir__hex">06</span>
+          <h3>Дерматология</h3>
+          <ul><li>Псориаз</li><li>Нейродермит, экзема</li><li>Выпадение волос (алопеция)</li></ul>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/sosudistye-zabolevaniya/varikoznoe-rasshirenie-ven-lechenie.html" target="_blank" rel="noopener">
+          <span class="dir__hex">07</span>
+          <h3>Сосудистые заболевания</h3>
+          <p>Варикозное расширение вен, тромбофлебиты без гнойного процесса, эндартериит, атеросклероз сосудов конечностей.</p>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/programma-apitoks-po-snizheniyu-vesa.html" target="_blank" rel="noopener">
+          <span class="dir__hex">08</span>
+          <h3>«Апитокс»: снижение веса</h3>
+          <p>Разумное снижение веса без крайностей и сомнительных добавок: апитоксинотерапия, продукты пчеловодства, психотерапия.</p>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir reveal" href="https://api-centre.ru/massazhi.html" target="_blank" rel="noopener">
+          <span class="dir__hex">09</span>
+          <h3>Массажи</h3>
+          <p>11 видов массажа: от классического и лимфодренажного до медового. Сочетание массажа с апитерапией.</p>
+          <span class="dir__more">Подробнее</span>
+        </a>
+        <a class="dir dir--cta reveal" href="tel:+73512638323">
+          <span class="dir__hex">?</span>
+          <h3>Не нашли своё заболевание?</h3>
+          <p>Позвоните — врач подскажет, поможет ли апитерапия именно в вашем случае.</p>
+          <span class="dir__more">+7 (351) 263-83-23</span>
+        </a>
+      </div>
+
+      <div class="indications reveal">
+        <h3 class="indications__title">Апитерапия также применяется при:</h3>
+        <ul class="tags">
+          <li>ревматических заболеваниях</li>
+          <li>радикулите и невритах</li>
+          <li>бронхиальной астме</li>
+          <li>хроническом бронхите</li>
+          <li>мигрени</li>
+          <li>артериальной гипертонии 1–2 ст.</li>
+          <li>ишемической болезни сердца</li>
+          <li>постинфарктных состояниях</li>
+          <li>иммунодефицитах</li>
+          <li>трофических язвах</li>
+          <li>тиреотоксикозе 1–2 ст.</li>
+          <li>иритах, иридоциклитах</li>
+          <li>зависимости от психоактивных веществ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="section section--tight" id="founder">
+    <div class="container">
+      <div class="banner reveal">
+        <img class="banner__img" src="assets/img/beekeeper.jpg" alt="" loading="lazy">
+        <div class="banner__shade"></div>
+        <div class="banner__content">
+          <p class="eyebrow eyebrow--light">[ основатель ]</p>
+          <h2 class="h2">Профессор<br><span class="accent">И.В. Кривопалов-Москвин</span></h2>
+          <p class="banner__lead">Доктор медицинских наук, создатель центра и автор нового направления — клинической апитерапии.</p>
+          <ul class="checks">
+            <li>С 2000 г. — председатель Совета апитерапии 11 европейских стран «Апиславия»</li>
+            <li>С 2001 г. — первый российский представитель в комиссии по апитерапии «Апимондии»</li>
+            <li>Ежегодно представлял Россию на международных конгрессах и симпозиумах</li>
+            <li>Проводит занятия по апитерапии за рубежом, в том числе в Корее</li>
+          </ul>
+          <a class="btn btn--honey" href="#contacts">Записаться на консультацию</a>
+        </div>
+        <figure class="banner__book">
+          <img src="assets/img/book-ms.jpg" alt="Обложка книги И.В. Кривопалова-Москвина «Рассеянный склероз. Новые подходы и новая жизнь»" loading="lazy">
+          <figcaption>
+            <b>Книги профессора</b>
+            «Рассеянный склероз» — представлена в 2017 г. на международном конгрессе в Стамбуле.
+            «Можно пить, нельзя напиваться» — новый формат наркологической литературы.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATH -->
+  <section class="section" id="path">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">[ этапы ]</p>
+        <h2 class="h2">Путь от первого звонка<br><span class="accent">до курса лечения</span></h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step__img"><img src="assets/img/sunflower.jpg" alt="Подсолнух на фоне неба" loading="lazy"></div>
+          <span class="step__num">01</span>
+          <h3>Консультация</h3>
+          <p>Позвоните или оставьте заявку. Запись на лечение и консультации — ежедневно с 7 до 15 часов по Москве.</p>
+        </article>
+        <article class="step reveal" style="--delay:.12s">
+          <div class="step__img"><img src="assets/img/honey-dipper.jpg" alt="Мёд стекает с ложки в банку" loading="lazy"></div>
+          <span class="step__num">02</span>
+          <h3>Индивидуальная программа</h3>
+          <p>Врач подбирает схему и дозу пчелиного яда с учётом диагноза, возраста, чувствительности и аллергизации.</p>
+        </article>
+        <article class="step reveal" style="--delay:.24s">
+          <div class="step__img"><img src="assets/img/honey-drip-yellow.jpg" alt="Густой мёд стекает с медовой ложки" loading="lazy"></div>
+          <span class="step__num">03</span>
+          <h3>Курс в клинике</h3>
+          <p>Комплексная программа 5–20 дней с питанием и проживанием. Заезд с 6 утра, выезд до 23:00 по местному времени.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRUCTURE -->
+  <section class="section section--alt" id="structure">
+    <div class="container">
+      <div class="structure">
+        <div class="section-head reveal">
+          <p class="eyebrow">[ структура центра ]</p>
+          <h2 class="h2">Всё для лечения<br><span class="accent">в одном месте</span></h2>
+          <p class="section-head__lead">В арсенале центра — поликлиника, стационар, профильные отделения и собственный научный отдел.</p>
+        </div>
+        <ul class="hexgrid reveal">
+          <li>Поликлиника</li>
+          <li>Стационар</li>
+          <li>Отделение клинической апитерапии</li>
+          <li>Наркологическое отделение</li>
+          <li>Косметологическое отделение</li>
+          <li>Психотерапевтическое отделение</li>
+          <li>Центр рассеянного склероза</li>
+          <li>Центр болезни Паркинсона</li>
+          <li>Научный отдел</li>
+          <li>Производственное объединение</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICES -->
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">[ стоимость ]</p>
+        <h2 class="h2">Комплексные программы<br><span class="accent">с питанием и проживанием</span></h2>
+        <p class="section-head__lead">Минимальные цены на лечебно-реабилитационные и восстановительные программы. Курсы 5–20 дней — в зависимости от диагноза, тяжести и течения заболевания.</p>
+      </div>
+      <div class="prices">
+        <article class="price reveal">
+          <p class="price__who">Жителям Челябинской области</p>
+          <p class="price__val"><small>от</small> 41 850 <span>₽</span></p>
+          <p class="price__note">лечение + питание + проживание</p>
+        </article>
+        <article class="price price--accent reveal" style="--delay:.1s">
+          <p class="price__who">Жителям других городов и областей</p>
+          <p class="price__val"><small>от</small> 46 100 <span>₽</span></p>
+          <p class="price__note">лечение + питание + проживание</p>
+        </article>
+        <article class="price reveal" style="--delay:.2s">
+          <p class="price__who">Иностранным гражданам</p>
+          <p class="price__val"><small>от</small> 700 <span>€</span></p>
+          <p class="price__note">лечение + питание + проживание</p>
+        </article>
+      </div>
+      <div class="price-extra reveal">
+        <div><b>Массаж</b><span>1 зона — 1 840 ₽</span></div>
+        <div><b>Обучение апитерапии</b><span>от 750 € — программы НИИ</span></div>
+        <a class="btn btn--honey btn--sm" href="#contacts">Узнать стоимость моего курса</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section--alt" id="reviews">
+    <div class="container">
+      <div class="reviews-head">
+        <div class="section-head reveal">
+          <p class="eyebrow">[ отзывы пациентов ]</p>
+          <h2 class="h2">Возвращаются<br><span class="accent">к жизни и к нам</span></h2>
+        </div>
+        <div class="reviews-nav">
+          <button class="round-btn" data-dir="-1" aria-label="Предыдущие отзывы">←</button>
+          <button class="round-btn" data-dir="1" aria-label="Следующие отзывы">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="reviews" id="reviewsTrack" tabindex="0" aria-label="Отзывы пациентов">
+      <figure class="review">
+        <span class="review__tag">Болезнь Паркинсона · 14 дней</span>
+        <blockquote>Ушла скованность, исправилась осанка, уменьшился тремор, движение и ходьба стали более плавными.</blockquote>
+        <figcaption>С. Людмила Анатольевна<small>07.02.2023</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Рассеянный склероз · 10 дней</span>
+        <blockquote>Лечение прошло очень положительно, чувствуется комфорт в организме и душе. У вас самый классный коллектив. Впервые я столкнулась с таким количеством хороших людей!</blockquote>
+        <figcaption>П. Наталья Сергеевна<small>п. Молодёжный, 27.09.2023</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Табачная зависимость · 3 дня</span>
+        <blockquote>За такой короткий срок бросил курить, хотя с большим стажем, и почувствовал, что тело помолодело лет на 10.</blockquote>
+        <figcaption>К. Вадим Геннадьевич<small>13.04.2022</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Остеохондроз · 5 дней</span>
+        <blockquote>Результаты лечения отличные. Великолепные пчёлки, бассейн, массажи. Сердечная благодарность Кривопалову-Москвину И.В.</blockquote>
+        <figcaption>К. Сажида Нажиповна<small>г. Озёрск, 15.10.2021</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Варикоз · 5 дней</span>
+        <blockquote>Мне очень понравилось! Классный персонал, очень дружелюбный, атмосфера тёплая, всё располагает к исцелению. Всё очень продуманно.</blockquote>
+        <figcaption>А. Ксения Анатольевна<small>г. Торонто, Канада, 21.10.2021</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Болезнь Паркинсона · 11 дней</span>
+        <blockquote>Улучшилось состояние, ушла скованность. Чётко поставлена работа в центре, всё очень слажено!</blockquote>
+        <figcaption>И. Зухра Навиловна<small>г. Уфа, 11.08.2021</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Гипертония, коксартроз · 10 дней</span>
+        <blockquote>Здесь работают исключительные люди. Современное оборудование, в помещении всегда идеальная чистота, порядок, уют!</blockquote>
+        <figcaption>С. Галина Георгиевна<small>29.12.2023</small></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__tag">Рассеянный склероз · 5 дней</span>
+        <blockquote>Не сравнить, какой приехал и какой уезжаю! Спасибо!</blockquote>
+        <figcaption>М. Антон Тимурович<small>16.08.2021</small></figcaption>
+      </figure>
+    </div>
+    <div class="container">
+      <a class="link-arrow" href="https://api-centre.ru/otzyvy.html" target="_blank" rel="noopener">Все отзывы пациентов</a>
+    </div>
+  </section>
+
+  <!-- INSTITUTE -->
+  <section class="section" id="institute">
+    <div class="container">
+      <div class="institute">
+        <div class="section-head reveal">
+          <p class="eyebrow">[ для специалистов ]</p>
+          <h2 class="h2">НИИ клинической<br><span class="accent">апитерапии</span></h2>
+          <p class="section-head__lead">На базе центра работает научно-исследовательский институт. Три вида деятельности — научная, лечебная и учебная — позволяют передавать накопленный опыт курсантам. По окончании выдаётся сертификат института.</p>
+        </div>
+        <div class="programs">
+          <article class="program reveal">
+            <span class="program__num">Программа №1</span>
+            <h3>Апитерапевт: курс усовершенствования</h3>
+            <p>Общая и клиническая апитерапия, организация платных лечебных клиник, амбулаторная и стационарная помощь.</p>
+            <p class="program__meta"><span>7–10 дней</span><span>индивидуально</span><b>750 €</b></p>
+          </article>
+          <article class="program reveal" style="--delay:.12s">
+            <span class="program__num">Программа №2</span>
+            <h3>Лечение наркологических заболеваний</h3>
+            <p>Расширенная программа: алкоголизм, никотиновая зависимость, наркомания, нормализация употребления алкоголя, апитерапия в косметологии.</p>
+            <p class="program__meta"><span>10–14 дней</span><span>индивидуально</span><b>1 500 €</b></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + CONTACTS -->
+  <section class="section section--tight" id="contacts">
+    <div class="container">
+      <div class="cta reveal">
+        <svg class="cta__bee" viewBox="0 0 120 100" aria-hidden="true"><use href="#bee"/></svg>
+        <div class="cta__left">
+          <h2 class="h2">Вложите силы<br>в своё <span class="accent">здоровье</span></h2>
+          <p>Оставьте заявку — администратор свяжется с вами, ответит на вопросы и подберёт удобную дату заезда.</p>
+
+          <form class="form" id="form" novalidate>
+            <div class="form__row">
+              <label class="field">
+                <span>Имя</span>
+                <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+              </label>
+              <label class="field">
+                <span>Телефон</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+              </label>
+            </div>
+            <label class="field">
+              <span>Что беспокоит</span>
+              <textarea name="msg" rows="3" placeholder="Например: остеохондроз, хочу курс на 10 дней"></textarea>
+            </label>
+            <div class="form__actions">
+              <button class="btn btn--honey" type="submit">Отправить в WhatsApp</button>
+              <a class="btn btn--glass" href="https://t.me/+79518032229" target="_blank" rel="noopener">Написать в Telegram</a>
+            </div>
+            <p class="form__note" id="formNote">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+          </form>
+        </div>
+
+        <div class="cta__right">
+          <div class="contact">
+            <p class="contact__label">Адрес</p>
+            <p class="contact__val">454091, г. Челябинск,<br>ул. Васенко, 4а</p>
+            <a class="link-arrow link-arrow--sm" href="https://yandex.ru/maps/?text=%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%92%D0%B0%D1%81%D0%B5%D0%BD%D0%BA%D0%BE%2C%204%D0%B0" target="_blank" rel="noopener">Открыть на карте</a>
+          </div>
+          <div class="contact">
+            <p class="contact__label">Запись на лечение и консультации</p>
+            <a class="contact__val contact__big" href="tel:+73512638323">+7 (351) 263-83-23</a>
+            <p class="contact__hint">с 7:00 до 15:00 МСК</p>
+          </div>
+          <div class="contact">
+            <p class="contact__label">Срочная помощь — круглосуточно</p>
+            <a class="contact__val" href="tel:+73512488182">+7 (351) 248-81-82</a>
+          </div>
+          <div class="contact contact--grid">
+            <div><p class="contact__label">Администрация</p><a href="tel:+73512687252">+7 (351) 268-72-52</a></div>
+            <div><p class="contact__label">Ординаторская</p><a href="tel:+73517370251">+7 (351) 737-02-51</a></div>
+          </div>
+          <div class="contact">
+            <p class="contact__label">Мессенджеры и почта</p>
+            <div class="socials">
+              <a href="https://wa.me/79518032229" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="https://t.me/+79518032229" target="_blank" rel="noopener">Telegram</a>
+              <a href="mailto:info@api-centre.ru">info@api-centre.ru</a>
+            </div>
+            <p class="contact__hint">WhatsApp, Telegram, MAX: +7 951 803-22-29</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+    <div class="footer__grid">
+      <div>
+        <a class="logo logo--footer" href="#top">
+          <span class="logo__mark">
+            <svg viewBox="0 0 100 100"><use href="#hex"/></svg>
+            <svg class="logo__bee" viewBox="0 0 120 100"><use href="#bee"/></svg>
+          </span>
+          <span class="logo__text"><b>АПИ</b><small>центр медицины</small></span>
+        </a>
+        <p class="footer__about">Международный центр медицины «АПИ» — клиника профессора И.В. Кривопалова-Москвина.</p>
+      </div>
+      <nav class="footer__links" aria-label="Документы">
+        <a href="https://api-centre.ru/klinika/licenzii.html" target="_blank" rel="noopener">Лицензии</a>
+        <a href="https://api-centre.ru/klinika/nashi-rekvizity.html" target="_blank" rel="noopener">Реквизиты</a>
+        <a href="https://api-centre.ru/klinika/nashi-partnery.html" target="_blank" rel="noopener">Партнёры</a>
+        <a href="https://api-centre.ru/nauchno-issledovatelskiy-institut-klinicheskoy-apiterapii/" target="_blank" rel="noopener">Институт</a>
+      </nav>
+      <nav class="footer__links" aria-label="Направления">
+        <a href="#directions">Неврология</a>
+        <a href="#directions">Наркология</a>
+        <a href="#directions">Дерматология</a>
+        <a href="#directions">Позвоночник и суставы</a>
+      </nav>
+    </div>
+    <p class="footer__copy">© 1991–2026 Международный центр медицины «АПИ». Все материалы являются результатом интеллектуальной деятельности, авторские права защищены. Информация на сайте не является публичной офертой.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
